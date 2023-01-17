@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  pgdatabase:
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../DOCKER-SQL/ny_taxi_postgres_data:/var/lib/postgresql/data
+    env_file:
+      - pgdatabase.env
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - "8080:80"
+    volumes:
+      - ../DOCKER-SQL/pgadmin-data:/var/lib/pgadmin
+    env_file:
+      - pgadmin.env
+    depends_on:
+      - pgdatabase
+    links:
+      - pgdatabase
+  ingest-data:
+    build: .
+    env_file:
+      - ingest-data.env
+    depends_on:
+      - pgdatabase
+    links:
+      - pgdatabase
