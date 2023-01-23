@@ -35,10 +35,9 @@ terraform.rc
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info
-*.terraform.lock.hcl
 *.out
 *output.json
 *.tfplan.out
 
 # Ignore Terraform lock file
-.terraform.lock.hcl
+**.terraform.lock.hcl
