@@ -1,0 +1,62 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-to-gsc-parent-flow'
+###
+name: NY Taxi GSC
+description: null
+version: 1264e12a78a39c880f8cff8867397807
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+tags: []
+parameters: {}
+schedule: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-to-gsc-parent-flow
+manifest_path: null
+storage:
+  repository: https://github.com/adhoc-am/data-engineering-zoomcamp-my-way
+  reference: develop
+  access_token: null
+  _block_document_id: a3e836a0-fa89-4415-b62d-ceb508319809
+  _block_document_name: dez-github-repo
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: etl_web_to_gcs.py:etl_to_gsc_parent_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    months:
+      title: months
+      position: 0
+      type: array
+      items:
+        type: integer
+    year:
+      title: year
+      position: 1
+      type: integer
+    color:
+      title: color
+      position: 2
+      type: string
+  required:
+  - months
+  - year
+  - color
+  definitions: null
