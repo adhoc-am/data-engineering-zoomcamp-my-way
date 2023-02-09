@@ -1,6 +1,7 @@
 **.env
 DOCKER-SQL/
 DOCKER-PYTHON/
+fhv/
 
 # Local .terraform directories
 **/.terraform/*
