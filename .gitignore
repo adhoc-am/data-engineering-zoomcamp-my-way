@@ -2,7 +2,9 @@
 DOCKER-SQL/
 DOCKER-PYTHON/
 fhv/
-
+fhv_*/
+yellow_*/
+green_*/
 # Local .terraform directories
 **/.terraform/*
 
