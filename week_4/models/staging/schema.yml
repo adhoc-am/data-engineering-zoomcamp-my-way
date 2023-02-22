@@ -8,3 +8,4 @@ sources:
     tables:
       - name: green_trips_all
       - name: yellow_trips_all
+      - name: fhv_trips_all
