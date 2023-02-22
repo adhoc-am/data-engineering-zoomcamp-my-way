@@ -4,12 +4,14 @@ with green_data as (
     select *, 
         'Green' as service_type 
     from {{ ref('stg_green_tripdata') }}
+    WHERE DATE(pickup_datetime) >= '2019-01-01' AND DATE(pickup_datetime) < '2021-01-01'
 ), 
 
 yellow_data as (
     select *, 
         'Yellow' as service_type
     from {{ ref('stg_yellow_tripdata') }}
+    WHERE DATE(pickup_datetime) >= '2019-01-01' AND DATE(pickup_datetime) < '2021-01-01'
 ), 
 
 trips_unioned as (
