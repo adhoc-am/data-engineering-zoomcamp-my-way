@@ -26,6 +26,7 @@ You should find the views and models for querying in your DWH.
 - 61648442
 - 71648442
 
+**Answer:  61,602,991**
 
 ### Question 2: 
 
@@ -38,7 +39,7 @@ You will need to complete "Visualising the data" videos, either using [google da
 - 76.3/23.7
 - 99.1/0.9
 
-
+**Answer:  89.9/10.1**
 
 ### Question 3: 
 
@@ -52,6 +53,7 @@ Filter records with pickup time in year 2019.
 - 53244696
 - 63244696
 
+**Answer:  43244696**
 
 ### Question 4: 
 
@@ -66,6 +68,7 @@ Run it via the CLI without limits (is_test_run: false) and filter records with p
 - 32998722
 - 42998722
 
+**Answer:  22998722**
 ### Question 5: 
 
 **What is the month with the biggest amount of rides after building a tile for the fact_fhv_trips table?**
@@ -78,6 +81,7 @@ Create a dashboard with some tiles that you find interesting to explore the data
 - December
 
 
+**Answer:  January**
 
 ## Submitting the solutions
 
